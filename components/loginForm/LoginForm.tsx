@@ -7,7 +7,7 @@ export const LoginForm = () => {
       <div className={styles.container} id="container">
         <div className={styles["form-container"]}>
           <form action="#">
-            <h1>Sign in</h1>
+            <h1>Zaloguj się</h1>
             <div className={styles["social-container"]}>
               <a href="#" className={styles.social}>
                 <i>X</i>
@@ -19,15 +19,14 @@ export const LoginForm = () => {
                 <i>X</i>
               </a>
             </div>
-            <span>or use your account</span>
             <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Hasło" />
 
             <Link href={"/register"}>
-              Don&apos;t have account? <br />
-              Click here
+              Nie masz konta? <br />
+              Kliknij tutaj
             </Link>
-            <button>Sign In</button>
+            <button>Zaloguj się</button>
           </form>
         </div>
       </div>

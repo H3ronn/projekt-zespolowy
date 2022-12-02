@@ -7,12 +7,11 @@ const RegisterForm = () => {
       <div className={styles.container} id="container">
         <div className={styles["form-container"]}>
           <form action="#">
-            <h1>Sign up</h1>
-            <span>or use your account</span>
+            <h1 className={styles.heading}>Zarejestruj się</h1>
             <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            <Link href={"/login"}>Sign in</Link>
-            <button>Sign Up</button>
+            <input type="password" placeholder="Hasło" />
+            <Link href={"/login"}>Zaloguj się</Link>
+            <button>Utwórz konto</button>
           </form>
         </div>
       </div>
