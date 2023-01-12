@@ -22,7 +22,6 @@ export default function Home({ articles }: any) {
 
 export const getStaticProps: GetStaticProps = async () => {
   const articles = await prisma.post.findMany({
-    where: { published: true },
     include: {
       author: {
         select: { name: true },

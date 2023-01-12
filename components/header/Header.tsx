@@ -23,12 +23,14 @@ const Header = () => {
         )}
       </div>
       <h1 className={styles.heading}>Serwis informacyjny</h1>
-      <Link href="/api/auth/signin" className={styles.link}>
-        Log in
-      </Link>
-      {!!session && (
+
+      {session ? (
         <Link href="/add" className={styles.addArticle}>
           Dodaj artykuł
+        </Link>
+      ) : (
+        <Link href="/api/auth/signin" className={styles.link}>
+          Log in
         </Link>
       )}
     </div>
