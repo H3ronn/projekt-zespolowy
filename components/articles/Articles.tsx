@@ -1,6 +1,7 @@
 import styles from "./articles.module.scss";
 
-const Articles = ({ articles }: any) => {
+const Articles = ({ articles = [] }: any) => {
+  console.log(articles);
   return (
     <div className={styles.wrapper}>
       <ul>

@@ -21,4 +21,10 @@ const options = {
   ],
   adapter: PrismaAdapter(prisma),
   secret: process.env.SECRET,
+  callbacks: {
+    async session({ session, token, user }: any) {
+      session.user.role = user.role;
+      return session;
+    },
+  },
 };
