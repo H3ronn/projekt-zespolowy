@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.article {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 10px;
+  min-width: 50vw;
+  max-width: 1200px;
+  text-align: justify;
+}
+
+.form {
+  padding: 20px;
+}
+
+.btn {
+  margin: 0 10px;
+  border: 2px black solid;
+  padding: 5px 8px;
+  background: none;
+}
+
+.rate {
+  padding: 20px;
+  margin-top: 10px;
+}

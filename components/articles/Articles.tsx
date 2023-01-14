@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./articles.module.scss";
 
 const Articles = ({ articles = [] }: any) => {
@@ -7,8 +8,10 @@ const Articles = ({ articles = [] }: any) => {
       <ul>
         {articles.map(({ id, title, content }: any) => (
           <li key={id} className={styles.article}>
-            <h2>{title}</h2>
-            <p>{content}</p>
+            <Link href={`/article/${id}`}>
+              <h2>{title}</h2>
+              <p>{content}</p>
+            </Link>
           </li>
         ))}
       </ul>
