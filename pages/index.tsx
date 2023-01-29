@@ -4,9 +4,13 @@ import AuthHeader from "../components/AuthHeader";
 import Header from "../components/header/Header";
 import type { GetStaticProps } from "next";
 import prisma from "../lib/prisma";
+import { PrismaArticle } from "../types/prismaTypes";
 
-export default function Home({ articles }: any) {
-  console.log(articles);
+type HomeProps = {
+  articles: PrismaArticle[];
+};
+
+export default function Home({ articles }: HomeProps) {
   return (
     <div>
       <Head>

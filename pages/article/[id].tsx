@@ -1,10 +1,10 @@
 import type { GetStaticProps } from "next";
 import { getArticleById, getArticlesPaths } from "../../lib/articles";
-import type Prisma from "@prisma/client";
 import SingleArticle from "../../components/singleArticle/SingleArticle";
+import { PrismaArticle } from "../../types/prismaTypes";
 
 type ArticlePageProps = {
-  articleData: Prisma.Post;
+  articleData: PrismaArticle;
 };
 
 export default function AdvertPage({ articleData }: ArticlePageProps) {
